@@ -23,11 +23,7 @@ class Student (var id: String, var name: String, var course: String, markIn: Dou
     }
 
     fun didPass(): Boolean {
-        if (mark in 40.0..100.0){
-            return true
-        }
-        else
-            return false
+        return mark in 40.0..100.0
     }
 
     override fun toString(): String {
